@@ -1,0 +1,76 @@
+
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+.hidden-items {
+    display: none;
+}
+
+.bulb-section{
+    background-color: #333333;
+    min-height: 100vh;
+}
+
+.log-out-container {
+    background-color: #333333;
+
+}
+
+.back-button {
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgb(207, 207, 207);
+    transition-duration: 1s;
+}
+
+.back-button:hover{
+    border: none;
+    scale: 1.2;
+    padding:15px;
+    box-shadow: inset 0 0 8px #f9f8fc;
+}
+/* 3d preserve */
+
+.onn-off-container{
+    position: relative;
+}
+
+.onn-off-container button {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgb(207, 207, 207);
+    transition-duration: 0.5s;
+    box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, .2),
+    0 0 8px rgb(207, 207, 207),
+        2px 2px 0 0 #d98e20,
+        3px 3px 0 0 #d98e20,
+        4px 4px 0 0 #d98e20,
+        5px 5px 0 0 #d98e20,
+        6px 6px 0 0 #d98e20,
+        7px 7px 0 0 #d98e20,
+        8px 8px 0 0 #d98e20,
+        9px 9px 0 0 #d98e20,
+        10px 10px 0 0 #d98e20,
+        11px 11px 0 0 #d98e20,
+        12px 12px 0 0 #d98e20;
+}
+
+.onn-off-container button:hover{
+    border: none;
+    scale: 1.2;
+    padding:15px;
+    box-shadow: inset 0 0 8px #f9f8fc;
+}
+
+.onn-button:hover {
+    box-shadow: inset 0 0 8px #101010 !important;
+    
+}

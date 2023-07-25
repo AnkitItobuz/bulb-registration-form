@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Bulb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+
+ 
+    <section class="h-100 bg-dark " id="registration-form">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card card-registration my-4">
+                <div class="row g-0">
+                  <div class="col-xl-6 d-none d-xl-block">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                      alt="Sample photo" class="img-fluid"
+                      style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                  </div>
+                  <div class="col-xl-6">
+                    <div class="card-body p-md-5 text-black">
+                      <h3 class="mb-5 text-uppercase">Student registration form</h3>
+                      <form action="">
+                      <div class="form-outline mb-4">
+                        <input type="text" id="name" class="form-control form-control-lg" required/>
+                        <label class="form-label" for="form3Example8">Name</label>
+                      </div>
+    
+      
+                      <div class="form-outline mb-4">
+                        <input type="text" id="address" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example8">Address</label>
+                      </div>
+      
+                    
+                      <div class="form-outline mb-4">
+                        <input type="date" id="dob" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example9">DOB</label>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="number" id="pincode" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example90">Pincode</label>
+                      </div>
+      
+                      <div class="form-outline mb-4">
+                        <input type="email" id="email-id" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example97">Email ID</label>
+                      </div>
+      
+                      <div class="d-flex justify-content-end pt-3">
+                        <button type="button" class="btn btn-light btn-lg " id="reset-button" onclick="resetButton()">Reset all</button>
+                        <!-- <button type="button" class="btn btn-warning btn-lg ms-2" id="submit-button">Submit form</button> -->
+                      <a href="bulb.html" class="btn btn-warning btn-lg ms-2" id="submit-button" onclick="submitButton()">Submit form</a>
+                      </div>
+                    </form>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="/js/script.js"></script>
+</body>
+</html>
