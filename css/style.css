@@ -1,19 +1,19 @@
-
-
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
     font-size: 1rem;
     line-height: 2.15;
     padding-left: .75em;
     padding-right: .75em;
-    }
-    .card-registration .select-arrow {
+}
+
+.card-registration .select-arrow {
     top: 13px;
-    }
+}
+
 .hidden-items {
     display: none;
 }
 
-.bulb-section{
+.bulb-section {
     background-color: #333333;
     min-height: 100vh;
 }
@@ -31,15 +31,16 @@
     transition-duration: 1s;
 }
 
-.back-button:hover{
+.back-button:hover {
     border: none;
     scale: 1.2;
-    padding:15px;
+    padding: 15px;
     box-shadow: inset 0 0 8px #f9f8fc;
 }
+
 /* 3d preserve */
 
-.onn-off-container{
+.onn-off-container {
     position: relative;
 }
 
@@ -49,7 +50,7 @@
     box-shadow: 0 0 8px rgb(207, 207, 207);
     transition-duration: 0.5s;
     box-shadow: inset 0 -8px 0 0 rgba(0, 0, 0, .2),
-    0 0 8px rgb(207, 207, 207),
+        0 0 8px rgb(207, 207, 207),
         2px 2px 0 0 #d98e20,
         3px 3px 0 0 #d98e20,
         4px 4px 0 0 #d98e20,
@@ -63,14 +64,14 @@
         12px 12px 0 0 #d98e20;
 }
 
-.onn-off-container button:hover{
+.onn-off-container button:hover {
     border: none;
     scale: 1.2;
-    padding:15px;
+    padding: 15px;
     box-shadow: inset 0 0 8px #f9f8fc;
 }
 
 .onn-button:hover {
     box-shadow: inset 0 0 8px #101010 !important;
-    
+
 }

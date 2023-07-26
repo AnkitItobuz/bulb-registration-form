@@ -1,4 +1,3 @@
-// const submitButton = document.getElementById("submit-button");
 const userName = document.getElementById("name");
 const address = document.getElementById("address");
 const dob = document.getElementById("dob");
@@ -8,15 +7,12 @@ const bulbContainer = document.getElementById("bulb-container");
 const registrationForm = document.getElementById("registration-form");
 const offBulb = document.getElementById("bulb-off");
 const onnBulb = document.getElementById("bulb-onn");
-// const resetButton = document.getElementById("reset-button");
 const bulbSection = document.querySelector(".bulb-section");
 const backButton = document.querySelector(".back-button");
 const currUserName = document.querySelector(".user-name");
 const backPage = document.querySelector(".back-page");
 const onnCount = document.querySelector(".onn-count");
 const offCount = document.querySelector(".off-count");
-
-
 
 let totalOnnCount = 0;
 let totalOffCount = 0;
@@ -28,13 +24,13 @@ function storeDataToDb(data) {
 function getDataFromDb() {
     const dbData = localStorage.getItem('users');
     if (dbData) {
-      return JSON.parse(dbData)
+        return JSON.parse(dbData)
     }
-  
-    return [];
-  }
 
-  const userDetails = getDataFromDb();
+    return [];
+}
+
+const userDetails = getDataFromDb();
 
 function addToDb(name, address, dob, pincode, emailId) {
     const userInfo = {
@@ -53,12 +49,10 @@ function addToDb(name, address, dob, pincode, emailId) {
 }
 currUserName.innerHTML = userDetails[userDetails.length - 1].name;
 
-
-
-function submitButton(){
+function submitButton() {
     // submitButton.href = "../bulb.html";
     if (userName.value !== "" && address.value !== "" && dob.value !== "" && pincode.value !== "" && emailId.value !== "") {
-       
+
         addToDb(userName.value, address.value, dob.value, pincode.value, emailId.value);
         return;
     }
@@ -66,7 +60,6 @@ function submitButton(){
         alert("All fields are mandatory!")
     }
 }
-
 
 function clearForm() {
     userName.value = "";
@@ -76,7 +69,7 @@ function clearForm() {
     emailId.value = "";
 }
 
-function resetButton(){
+function resetButton() {
     clearForm();
 
 }
@@ -89,7 +82,7 @@ function onnButton() {
     document.querySelector(".onn-button").disabled = true;
 
     document.querySelector(".off-button").disabled = false;
-   
+
 }
 
 function offButton() {
